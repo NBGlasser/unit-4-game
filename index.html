@@ -3,9 +3,8 @@
 
     <head>
         <meta charset="UTF-8">
-        <title>Golf</title>
+        <title>X-Treme Golf</title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
         <style>
             body {
                 background: url("images/course.jpg");
@@ -15,12 +14,34 @@
             img {
                 width: 200px;
                 height: 200px;
+                margin:20px;
             }
             #points-div {
-                background: lightgray;
-            }
+                background: rgba(211, 211, 211, 0.358);
+                width: 25%;
+                margin-left: 37.5%;
+                margin-right: 37.5%;
+                }
             #wins-losses {
-                background: lightgreen;
+                background: rgba(211, 211, 211, 0.358);
+                width: 25%;
+                margin-left: 37.5%;
+                margin-right: 37.5%;
+            }
+            #title{
+                color: red;
+            }
+            strong{
+                color: red;
+            }
+            h4{
+                background: rgba(211, 211, 211, 0.358);
+                width: 25%;
+                margin-left: 37.5%;
+                margin-right: 37.5%;
+            }
+            #distance {
+                background: rgba(211, 211, 211, 0.358);
                 width: 25%;
                 margin-left: 37.5%;
                 margin-right: 37.5%;
@@ -29,14 +50,16 @@
     </head>
 
     <body>
-        <h1>Golf</h1>
+        <h1 id="title">X-Treme Golf</h1>
+        <h4>Get the ball to the hole by <strong>any means necessary</strong></h4>
+        <h4>Don't overshoot it <strong>or else</strong></h4>
 
-        <div>
+        <div id="distance">
             <h2>Target Distance:</h2>
             <h1 id="target"></h1>
         </div>
 
-        <div id="Points-Div">
+        <div id="points-div">
             <h2>Your Distance:</h2>
             <h1 id="you-points"></h1>
         </div>
@@ -47,13 +70,13 @@
             <p id="losses-text"></p>
         </div>
         <div>
-            <img src="images/putter.png" alt="button-1" id="button-1">
+            <img src="images/cannon.png" alt="button-1" id="button-1">
                 <!-- <h1>1</h1> -->
             <!-- </button> -->
-            <img src="images/9-iron.png" alt="button-2" id="button-2">
+            <img src="images/wind.png" alt="button-2" id="button-2">
                 <!-- <h1>2</h1> -->
             <!-- </button> -->
-            <img src="images/driver.png" alt="button-3" id="button-3">
+            <img src="images/bat.png" alt="button-3" id="button-3">
                 <!-- <h1>3</h1> -->
             <!-- </button> -->
             <img src="images/racket.png" alt="button-4" id="button-4">
